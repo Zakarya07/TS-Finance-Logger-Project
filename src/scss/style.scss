@@ -1,0 +1,108 @@
+$color_1: #6620cd;
+$color_2: #333;
+$color_3: white;
+$color_4: #999;
+$font-family_1: "Arial";
+$font-lg: 3em;
+$font-md: 2em;
+$font-sm: 1.1em;
+
+body {
+  margin: 0;
+  font-family: $font-family_1;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 40px auto;
+  color: $color_1;
+  text-align: center;
+  font-size: $font-lg;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  padding: 6px 10px;
+  border: 1px solid #eee;
+  margin: 10px auto;
+  h4 {
+    color: $color_1;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  p {
+    color: $color_2;
+    margin: 8px 0 0;
+  }
+}
+footer {
+  background: #eee;
+  padding: 1vh 0;
+  margin-top: 10vh;
+  // Form
+  form {
+    max-width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .container {
+      padding: 1em;
+
+      label {
+        display: block;
+        font-weight: bold;
+        font-size: $font-sm;
+        color: $color_2;
+        margin: 16px 0 6px;
+      }
+
+      input,
+      select {
+        padding: 0.5em;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        font-size: $font-sm;
+      }
+      .field {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      // Add button
+      button {
+        color: $color_3;
+        border: none;
+        background: $color_1;
+        padding: 0.5em 1em;
+        font-size: $font-sm;
+        min-width: 5vw;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+          background: darken($color_1, 5%);
+          transform: scale(0.95);
+        }
+      }
+    }
+
+    // Copy
+    a {
+      text-align: center;
+      display: inline-block;
+      color: $color_2;
+      text-decoration: none;
+      margin: 4vh auto 0;
+      font-size: $font-sm;
+    }
+  }
+}
